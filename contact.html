@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- スクリプト -->
+    <script src="script.js"></script>
+
+    <header>
+
+        <!-- ハンバーガーメニューボタン -->
+        <div class="logo">
+            <a href="index.html"><img class="logo_img" src="img/logo.jpg"></a>
+            <h3 class="site_title">my portfolio</h3>
+        </div>
+        <nav class="nav">
+            <ul class="nav_menu">
+                <li><a href="index.html">works</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div class="contact_mv">
+        <img class="contact_img" src="img/contact.jpg">
+    </div>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact">
+        <h1 class="section_title">contact</h1>
+
+        <!-- フォーム -->
+        <form action="send_mail.php" method="post">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="footer_text">@ayaka_kogo 2020-2024</p>
+    </footer>
+
+</body>
+</html>
